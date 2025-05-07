@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700,500,600..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1d403c;
+  --section-padding: 60px;
+  --main-background: #cdcdcd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  background-color: var(--main-background);
+}
+
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.links ul li {
+  padding: 5px 25px;
+}
+
+.links ul li a {
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  color: black;
+}
+
+.links ul li:first-child {
+  width: 80%;
+}
+
+
+.protifolio {
+  padding: var(--section-padding);
+  background-color: var(--main-background);
+}
+
+.protifolio .contaner {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.protifolio .contaner p {
+  margin: -19px 0;
+  font-size: 25px;
+  color: #000000a1;
+}
+
+.protifolio .contaner h2 {
+  font-size: 75px;
+  letter-spacing: -3px;
+  color: #000000a1;
+}
+
+.protifolio .protifolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 150px;
+}
+
+.protifolio .protifolio-content .col {
+  background-color: white;
+
+}
+
+.protifolio .protifolio-content .col img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.protifolio .protifolio-content .col .info {
+  padding: 25px;
+}
+
+.protifolio .col .info h3 {
+  margin-bottom: 15px;
+}
+
+.protifolio .col .info p {
+  margin: 0px;
+}
+
+@media (max-width:380px) {
+  .links ul li {
+    padding: 5px 10px;
+  }
+
+  .protifolio .contaner {
+    margin: -35px;
+  }
+}
+
+@media (max-width:600px) {
+  .protifolio .protifolio-content {
+    margin: 40px 0px;
+  }
+}
